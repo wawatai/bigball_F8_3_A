@@ -1,0 +1,164 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,
+center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: "微軟正黑體";
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block;
+    box-sizing: border-box;
+}
+body {
+    line-height: 1;
+}
+main {
+    display: block;
+}
+ol,ul {
+    list-style: none;
+}
+blockquote,q {
+    quotes: none;
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+button {
+    font-family: "微軟正黑體";
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px;
+}
+select,input {
+    font-family: "微軟正黑體";
+    outline: none;
+    appearance: none;
+    box-sizing: border-box;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+
+//內容
+
+html {
+    width: 100%;
+    height: 100%;
+    background: #192438;
+
+    body{
+        width: 100%;
+        min-width: 1000px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+        main {
+            width: 100%;
+            min-width: 1000px;
+            height: 1%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 42%;
+
+            article {
+                width: 33.5%;
+                height: 100%;
+                position: relative;
+
+                .logo {
+                    width: 100%;
+                    height: 0;
+                    background: url('../images/logo.png') no-repeat;
+                    background-size: contain;
+                    padding-top: 44.7%;
+                }
+
+                .inputBox {
+                    width: 100%;
+                    height: 0;
+                    background: url('../images/inputBG.png') no-repeat;
+                    background-size: contain;
+                    padding-top: 28.8%;
+                    position: relative;
+                    margin-left: 9%;
+
+                    input {
+                        width: 45%;
+                        height: 28%;
+                        background: none;
+                        border: none;
+                        color: #121212;
+                        font-size: 1.5vw;
+                        font-weight: bold;
+                        position: absolute;
+                        top: 8.5%;
+                        left: 12.5%;
+
+                        &:nth-of-type(2) {
+                            top: 62.5%;
+                        }
+                    }
+
+                    button {
+                        width: 36%;
+                        height: 106%;
+                        background: url('../images/loginBtn.png') no-repeat;
+                        background-size: contain;
+                        position: absolute;
+                        top: -3%;
+                        left: 52.5%;
+
+                        &:hover,&:active,&.active {
+                            background: url('../images/loginBtn_2.png') no-repeat;
+                            background-size: contain;
+                        }
+                    }
+                }
+
+                .downBtn {
+                    width: 61.3%;
+                    height: 0;
+                    background: url('../images/downBtn.png') no-repeat;
+                    background-size: contain;
+                    padding-top: 9.4%;
+                    margin: 3% 0 0 21%;
+
+                    &:hover,&:active,&.active {
+                        background: url('../images/downBtn_2.png') no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        //背景
+        .bg {
+            position: absolute;
+            width: 100%;
+            min-width: 1000px;
+            height: 100%;
+            background: url('../images/bg.jpg') no-repeat center;
+            background-size: 100%;
+            z-index: -999;
+        }
+    }
+}
